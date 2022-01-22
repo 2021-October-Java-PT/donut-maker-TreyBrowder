@@ -67,6 +67,10 @@ class DonutMaker {
             }
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d08c264a9f506c0f0ff40087c1baeb854b2c7ece
         getAutoClickerCount(){
             if (this.autoClickerCount < 0) {
                 return this.autoClickerCount = 0;
@@ -76,11 +80,22 @@ class DonutMaker {
             }
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d08c264a9f506c0f0ff40087c1baeb854b2c7ece
         getAutoClickersCost(){
             return this.autoClickersCost;
         }
 
         addDonutMultiplier(){
+<<<<<<< HEAD
+=======
+            return this.autoClickersCost;
+        }
+
+        addDonutMultiplier(){
+>>>>>>> d08c264a9f506c0f0ff40087c1baeb854b2c7ece
             if (this.donutCount >= this.donutMultipliersCost && this.donutMultiplierCount < 11) {
                 this.donutCount -= this.donutMultipliersCost;
                 this.donutMultiplierCount += 1;
@@ -102,11 +117,22 @@ class DonutMaker {
             }
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d08c264a9f506c0f0ff40087c1baeb854b2c7ece
         getDonutMultipliersCost(){
             return this.donutMultipliersCost;
         }
 
         getDonutsPerClick(){
+<<<<<<< HEAD
+=======
+            return this.donutMultipliersCost;
+        }
+
+        getDonutsPerClick = () => {
+>>>>>>> d08c264a9f506c0f0ff40087c1baeb854b2c7ece
             if (this.donutMultiplierCount == 0) {
                 this.donutsPerClick = 1;
                 return this.donutsPerClick;
@@ -143,6 +169,13 @@ class DonutMaker {
         getBakerCost(){
             return this.bakerCost;
         }
+<<<<<<< HEAD
+=======
+  
+        getBakerCost(){
+            return this.bakerCost;
+        }
+>>>>>>> d08c264a9f506c0f0ff40087c1baeb854b2c7ece
 
         addBakery(){
             if (this.donutCount >= this.bakeryCost) {
@@ -163,7 +196,13 @@ class DonutMaker {
         getBakeryCost(){
             return this.bakeryCost;
         }
+<<<<<<< HEAD
     
 }
 
 export default DonutMaker;
+=======
+        
+}       
+export default DonutMaker;
+>>>>>>> d08c264a9f506c0f0ff40087c1baeb854b2c7ece
