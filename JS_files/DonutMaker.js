@@ -67,6 +67,7 @@ class DonutMaker {
             }
         }
 
+
         getAutoClickerCount(){
             if (this.autoClickerCount < 0) {
                 return this.autoClickerCount = 0;
@@ -76,7 +77,12 @@ class DonutMaker {
             }
         }
 
+
         getAutoClickersCost(){
+            return this.autoClickersCost;
+        }
+
+        addDonutMultiplier(){
             return this.autoClickersCost;
         }
 
@@ -102,11 +108,16 @@ class DonutMaker {
             }
         }
 
+
         getDonutMultipliersCost(){
             return this.donutMultipliersCost;
         }
 
         getDonutsPerClick(){
+            return this.donutMultipliersCost;
+        }
+
+        getDonutsPerClick = () => {
             if (this.donutMultiplierCount == 0) {
                 this.donutsPerClick = 1;
                 return this.donutsPerClick;
@@ -143,6 +154,10 @@ class DonutMaker {
         getBakerCost(){
             return this.bakerCost;
         }
+  
+        getBakerCost(){
+            return this.bakerCost;
+        }
 
         addBakery(){
             if (this.donutCount >= this.bakeryCost) {
@@ -163,7 +178,6 @@ class DonutMaker {
         getBakeryCost(){
             return this.bakeryCost;
         }
-    
-}
-
+        
+}       
 export default DonutMaker;
