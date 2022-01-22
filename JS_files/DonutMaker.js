@@ -74,6 +74,14 @@ class DonutMaker {
             return this.autoClickersCost;
         }
 
+        autoClickFunction() {
+            if (this.autoClickerCount >= 1) {
+              setInterval(() => {
+                this.donutCount += (1 * this.autoClickerCount);
+              }, 15000);
+            }
+          }
+
         addDonutMultiplier(){
             if (this.donutCount >= this.donutMultipliersCost) {
                 this.donutCount -= this.donutMultipliersCost;
@@ -123,9 +131,21 @@ class DonutMaker {
             }
         }
 
+        getBakerCount(){
+            return this.bakerCount;
+        }
+
         getBakerCost(){
             return this.bakerCost;
         }
+
+        autoBakerFunction() {
+            if (this.autoBakerCount >= 1) {
+              setInterval(() => {
+                this.donutCount += (1 * this.autoBakerCount);
+              }, 2000);
+            }
+          }
 
         addBakery(){
             if (this.donutCount >= this.bakeryCost) {
@@ -146,6 +166,14 @@ class DonutMaker {
         getBakeryCost(){
             return this.bakeryCost;
         }
+
+        autoBakeryFunction() {
+            if (this.autoBakeryCount >= 1) {
+              setInterval(() => {
+                this.donutCount += (1 * this.autoBakeryCount);
+              }, 500);
+            }
+          }
     
 }
 
