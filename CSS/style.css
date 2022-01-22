@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1.5px;
+}
+
+html {
+  font-size: 16px;
+  color: rgb(2, 196, 44);
+  background: rgb(0, 0, 0);
+}
+
+#welcome-title {
+  background-color: darkslategray;
+  margin-bottom: 1px;
+}
+
+#top-page {
+  font-size: 46px;
+  text-align: center;
+  color: rgb(0, 182, 9);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: greenyellow;
+}
+
+.navBar a:link,
+a:visited {
+  color: aqua;
+  background-color: rgb(51, 51, 51);
+  padding: 14px, 25px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  background-color: purple;
+}
+
+.heading-title {
+  font-size: 36px;
+  text-align: center;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#donutButton {
+  display: block;
+  margin: auto auto;
+  background-color: darkslategray;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#game-scores {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 20px 20px 20px;
+}
+
+.game-choices {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.button {
+  text-decoration: none;
+  background-color: darkslategray;
+  font-size: 14px;
+  color: aqua;
+}
+
+#about-Fred {
+  display: block;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#about-us {
+  display: block;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#back_to_top {
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  font-size: 16px;
+}

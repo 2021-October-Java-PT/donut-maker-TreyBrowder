@@ -9,13 +9,15 @@
     </head>
 <body>
     <header>
-      <h1 id="top-page">Welcome to Donut Clicker!</h1>
+      <nav id="welcome-title">
+        <h1 id="top-page">Welcome to Donut Clicker!</h1>
+      </nav>  
         <div class="navBar">
 
-            <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
-            <a href="#about-Fred">About Fred</a>
-            <a href="#about-us">About me</a>
-            <a href="#contact-links">Contact us</a>
+            <a id="navItem" href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
+            <a id="navItem" href="#about-Fred">About Fred</a>
+            <a id="navItem" href="#about-us">About me</a>
+            <a id="navItem" href="#contact-links">Contact us</a>
         </div>
     </header>
 
@@ -36,6 +38,8 @@
                 <p>Donuts: <span id="donutDisplay">0</span></p>
                 <p>Auto Clicks: <span id="autoClickerDisplay">0</span></p>
                 <p>Auto clicker price: <span id="autoClickerCost">20</span></p>
+                <p>Donut multiplier: <span id="multiplierDisplay">0</span></p>
+                <p>Donut multiplier price: <span id="multiplierCost">10</span></p>
                 <p>Bakers: <span id="bakersDisplay">0</span></p>
                 <p>Bakers price: <span id="bakersCost">100</span></p>
                 <p>Bakeries: <span id="bakeryDisplay">0</span></p>
@@ -44,11 +48,12 @@
             </section>
 
             <section class="game-choices">
-                <button id="buyAutoClick">buy auto clicker</button>
-                <button id="buyBaker">buy baker</button>
-                <button id="buyBakery">Buy Bakery</button>
-                <button id="resetAutoClicker">reset auto clicker</button>
-                <button id="resetGame">Reset Game</button>
+                <button class="button" id="buyAutoClick">buy auto clicker</button>
+                <button class="button" id="buyMultiplierButton">buy donut multiplier</button>
+                <button class="button" id="buyBaker">buy baker</button>
+                <button class="button" id="buyBakery">Buy Bakery</button>
+                <button class="button"id="resetAutoClicker">reset auto clicker</button>
+                <button class="button" id="resetGame">Reset Game</button>
             </section>
     </div>
 
@@ -66,7 +71,7 @@
     </div>      
 
     <div id="contact-links">
-          <h3 class="heading">Contact Us</h3>
+          <h3 class="heading-title">Contact Us</h3>
           <ul>
             <li><a href="https://linkedin.com/in/trey-browder7" alt="LinkedIn">LinkedIn</a></li>
             <li><a href="https://github.com/TreyBrowder" alt="Github">GitHub</a></li>
@@ -74,10 +79,10 @@
     </div>
 
     <section id="back_to_top">
-      <a href="#top-page">Top of the page</a>
+      <a id="toplink" href="#top-page">Top of the page</a>
     </section>
 
-    <footer>
+    <footer id="footer">
         &copy; Trey Browder 2022
     </footer>
   
