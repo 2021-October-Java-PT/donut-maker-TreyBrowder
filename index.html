@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Donut Clikcer</title>
-        <link rel="stylesheet" href="/CSS/stylee.css">
+        <link rel="stylesheet" href="/CSS/style.css">
     </head>
 <body>
     <header>
@@ -30,21 +30,25 @@
     </div>
 
     <div class="game">
-        <button id="donutButton" onclick="makeDonuts()"> <img src="/images/glazedDonut.jpg" alt="White Donut with Sprinkles">
+        <button id="donutButton"> <img src="/images/donutPic.png" alt="White Donut with Sprinkles">
         </button>
             <section id="game-scores">
-                <p id="donuts-text">Donuts: 0</p>
-                <p id="autoClick-text">Auto Clicks: 0</p>
-                <p id="baker-text">Bakers: 0</p>
-                <p id="bakery-text">Bakeries: 0</p>
-                <p id="donuts-per-min-text"> Donuts per minute: 0</p>
+                <p>Donuts: <span id="donutDisplay">0</span></p>
+                <p>Auto Clicks: <span id="autoClickerDisplay">0</span></p>
+                <p>Auto clicker price: <span id="autoClickerCost">20</span></p>
+                <p>Bakers: <span id="bakersDisplay">0</span></p>
+                <p>Bakers price: <span id="bakersCost">100</span></p>
+                <p>Bakeries: <span id="bakeryDisplay">0</span></p>
+                <p>Bakeries price: <span id="bakeryCost">1000</span></p>
+                <p>Donuts per minute: <span id="donutsPerMinDisplay">0</span></p>
             </section>
 
             <section class="game-choices">
-                <button onclick="buyAutoClicker()">buy auto clicker</button>
-                <button onclick="buyBaker()">buy baker</button>
-                <button onclick="buyBakery()">Buy Bakery</button>
-                <button onclick="resetGame()">Reset Game</button>
+                <button id="buyAutoClick">buy auto clicker</button>
+                <button id="buyBaker">buy baker</button>
+                <button id="buyBakery">Buy Bakery</button>
+                <button id="resetAutoClicker">reset auto clicker</button>
+                <button id="resetGame">Reset Game</button>
             </section>
     </div>
 
