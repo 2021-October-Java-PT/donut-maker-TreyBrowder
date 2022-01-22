@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donut Clikcer</title>
+        <link rel="stylesheet" href="/CSS/stylee.css">
+    </head>
+<body>
+    <header>
+      <h1 id="top-page">Welcome to Donut Clicker!</h1>
+        <div class="navBar">
+
+            <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
+            <a href="#about-Fred">About Fred</a>
+            <a href="#about-us">About me</a>
+            <a href="#contact-links">Contact us</a>
+        </div>
+    </header>
+
+    <div class="heading-section">
+        <h3 class="heading-title">Directions</h3>
+            <ul>
+                <li>Click the donut to start making donuts.</li>
+                <li>Use your donuts to buy a single baker. Each baker will make one donut per second for you!</li>
+                <li>Use your donuts to buy a bakery. Each bakery created 20 donuts per second!</li>
+                <li>The reset button resets the game</li>
+            </ul>
+    </div>
+
+    <div class="game">
+        <button id="donutButton" onclick="makeDonuts()"> <img src="/images/glazedDonut.jpg" alt="White Donut with Sprinkles">
+        </button>
+            <section id="game-scores">
+                <p id="donuts-text">Donuts: 0</p>
+                <p id="autoClick-text">Auto Clicks: 0</p>
+                <p id="baker-text">Bakers: 0</p>
+                <p id="bakery-text">Bakeries: 0</p>
+                <p id="donuts-per-min-text"> Donuts per minute: 0</p>
+            </section>
+
+            <section class="game-choices">
+                <button onclick="buyAutoClicker()">buy auto clicker</button>
+                <button onclick="buyBaker()">buy baker</button>
+                <button onclick="buyBakery()">Buy Bakery</button>
+                <button onclick="resetGame()">Reset Game</button>
+            </section>
+    </div>
+
+    <div id="about-Fred">
+            <h3 class="heading-title">About Fred</h3>
+                <p id="about-fred-info"> Fred is an owner of a bakery shop in Columbus, Ohio.  He older and he's always tired.  He's been in the baking industry for 60 years.  His shop specializes in making donuts.  They're known by every from all walks of life and from every corner of the world!  He's looking to hire bakers, buy more realestate, and to automate his bakery so he doesn't have to work as hard while still delivering quality donuts that his customers know and love.  Help fred by making donuts!
+                </p>
+    </div>
+
+    <div id="about-us">
+        <h3 class="heading-title">About Me</h3>
+            <p id="about-me-info">
+              My experience as a personal and as a group fitness coach has taught me the value in hardwork    and in being discipline.It also helped me hone my communication and relationship building skills.  Currently I'm building my portfolio as a software developer through a bootcamp course at We Can Code It.  In my free time I like to workout and I like to practice skills I've learned through the course. In addition to that I like to plan out my path to becoming more knowlegable as a developer. As a coach I was designing workouts and nutrition plans, and now here I am building full stack web applications. I'm looking forward to furthering my knowlege and continuing to grow as a software developer
+            </p>
+    </div>      
+
+    <div id="contact-links">
+          <h3 class="heading">Contact Us</h3>
+          <ul>
+            <li><a href="https://linkedin.com/in/trey-browder7" alt="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://github.com/TreyBrowder" alt="Github">GitHub</a></li>
+          </ul>      
+    </div>
+
+    <section id="back_to_top">
+      <a href="#top-page">Top of the page</a>
+    </section>
+
+    <footer>
+        &copy; Trey Browder 2022
+    </footer>
+  
+
+    <script src="/JS files/DonutMaker.js"></script>
+    <script src="/JS files/app.js"></script>
+</body>
+
 </html>
