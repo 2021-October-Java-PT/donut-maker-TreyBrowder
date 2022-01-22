@@ -14,7 +14,7 @@ class DonutMaker {
         this.bakeryCost = 1000;
     }
 
-    resetGame = () => {
+    resetGame(){
         this.donutCount = 0;
         this.myAutoClickers = 0;
         this.autoClickersCost = 100;
@@ -27,7 +27,7 @@ class DonutMaker {
         this.bakeryUpgradeCost = 1000;
         }
 
-        addDonut = () => {
+        addDonut(){
             if (this.donutMultiplierCount == 0) {
                 this.donutCount += 1;
             }
@@ -36,7 +36,7 @@ class DonutMaker {
             }
         }
 
-        getDonutCount = () => {
+        getDonutCount(){
             if (this.donutCount < 0) {
                 this.donutCount = 0;
                 return this.donutCount;
@@ -46,7 +46,7 @@ class DonutMaker {
             }
         }
 
-        autoAddDonut = (obj) => {
+        autoAddDonut(obj){
             if (obj.donutMultiplierCount == 0) {
                 obj.donutCount += obj.autoClickerCount;
             }
@@ -55,7 +55,7 @@ class DonutMaker {
             }
         }
        
-        addAutoClicker = () => {
+        addAutoClicker(){
             if (this.donutCount >= this.autoClickerCost) {
                 this.donutCount -= this.autoClickerCost;
                 this.myAutoClickers += 1;
@@ -67,7 +67,8 @@ class DonutMaker {
             }
         }
 
-        getAutoClickerCount = () => {
+
+        getAutoClickerCount(){
             if (this.autoClickerCount < 0) {
                 return this.autoClickerCount = 0;
             }
@@ -76,11 +77,16 @@ class DonutMaker {
             }
         }
 
-        getAutoClickersCost = () => {
+
+        getAutoClickersCost(){
             return this.autoClickersCost;
         }
 
-        addDonutMultiplier = () => {
+        addDonutMultiplier(){
+            return this.autoClickersCost;
+        }
+
+        addDonutMultiplier(){
             if (this.donutCount >= this.donutMultipliersCost && this.donutMultiplierCount < 11) {
                 this.donutCount -= this.donutMultipliersCost;
                 this.donutMultiplierCount += 1;
@@ -92,7 +98,7 @@ class DonutMaker {
             }
         }
 
-        getDonutMultiplierCount = () => {
+        getDonutMultiplierCount(){
             if (this.donutMultiplierCount < 0) {
                 this.donutMultiplierCount = 0;
                 return this.donutMultiplierCount;
@@ -102,7 +108,12 @@ class DonutMaker {
             }
         }
 
-        getDonutMultipliersCost = () => {
+
+        getDonutMultipliersCost(){
+            return this.donutMultipliersCost;
+        }
+
+        getDonutsPerClick(){
             return this.donutMultipliersCost;
         }
 
@@ -117,7 +128,7 @@ class DonutMaker {
             }
         }
 
-        getDonutsPerMin = () => {
+        getDonutsPerMin(){
             if (this.donutMultiplierCount == 0) {
                 this.donutsPerMin = this.myAutoClickers * 60;
                 return this.donutsPerMin;
@@ -128,7 +139,7 @@ class DonutMaker {
             }
         }
 
-        addBaker = () => {
+        addBaker(){
             if (this.donutCount >= this.bakerCost) {
                 this.donutCount -= this.bakerCost;
                 this.baker += 1;
@@ -140,11 +151,15 @@ class DonutMaker {
             }
         }
 
-        getBakerCost = () => {
+        getBakerCost(){
+            return this.bakerCost;
+        }
+  
+        getBakerCost(){
             return this.bakerCost;
         }
 
-        addBakery = () => {
+        addBakery(){
             if (this.donutCount >= this.bakeryCost) {
                 this.donutCount -= this.bakeryCost;
                 this.bakeryCount += 1;
@@ -156,12 +171,13 @@ class DonutMaker {
             }
         }
 
-        getBakeryCount = () => {
+        getBakeryCount(){
             return this.bakeryCount;
         }
 
-        getBakeryCost = () => {
+        getBakeryCost(){
             return this.bakeryCost;
         }
-    
-}
+        
+}       
+export default DonutMaker;
